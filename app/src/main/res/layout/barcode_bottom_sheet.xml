@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/barcode_bottom_sheet_padding_vertical"
+    android:paddingBottom="@dimen/barcode_bottom_sheet_padding_vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/barcode_field_recycler_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textIsSelectable="true"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/open_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/barcode_field_box"
+        android:layout_marginEnd="@dimen/barcode_field_padding_vertical"
+        android:padding="@dimen/barcode_field_label_size"
+        android:text="@string/open_btn_txt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/barcode_field_label_size"
+        android:focusable="true" />
+
+</LinearLayout>
